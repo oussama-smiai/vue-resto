@@ -1,5 +1,5 @@
 <template>
- <img src="../assets/resto.png" />
+ <img class="logo" src="../assets/resto.png" />
 <h1> Sign Up</h1>
 <div class="register">
     <input type="text" v-model="name" placeholder="enter name" />

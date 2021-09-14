@@ -1,0 +1,6 @@
+{
+    "name": "restaurant management application",
+    "description": "A basic Node.js API using json-server",
+    "repository": "https://github.com/oussama-smiai/vue-resto",
+    "keywords": ["node","json-server","vue.js"]
+}
