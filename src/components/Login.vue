@@ -1,6 +1,6 @@
 <template>
  <img class="logo" src="../assets/resto.png" />
-<h1> Login2</h1>
+<h1> Login3</h1>
 <div class="login">
      <input type="text" v-model="email" placeholder="enter email" />
       <input type="password" v-model="password" placeholder="enter password" />
