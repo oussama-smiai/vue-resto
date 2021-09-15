@@ -1,6 +1,6 @@
 <template>
  <img class="logo" src="../assets/resto.png" />
-<h1> Sign Up6</h1>
+<h1> Sign Up</h1>
 <div class="register">
     <input type="text" v-model="name" placeholder="enter name" />
      <input type="text" v-model="email" placeholder="enter email" />
