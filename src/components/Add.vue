@@ -5,7 +5,7 @@
     <input type="text" name="name" placeholder="Enter Name" v-model="restaurant.name"/> 
     <input type="text" name="address" placeholder="Enter Address" v-model="restaurant.address" /> 
     <input type="text" name="contact" placeholder="Enter Contact" v-model="restaurant.contact"/>
-    <button v-on:click="addRestaurant">Add new restaurant</button> 
+    <button type="button" v-on:click="addRestaurant">Add new restaurant</button> 
 </form>
 </template>
 <script>
@@ -32,7 +32,7 @@ export default{
                 address: this.restaurant.address, 
                 contact:this.restaurant.contact})
             if(result.status==201)
-                this.$router.push({name:'/'})
+                this.$router.push({name:'Home'})
     
         }
     },
