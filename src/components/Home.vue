@@ -35,7 +35,7 @@ export default{
         let user = localStorage.getItem('user-info')
         this.name = JSON.parse(user).name
         if (!user){
-            this.$router.push({name:'SignUp'})
+            this.$router.push({name:'Sign-up'})
         }
         let result = await axios.get("https://db-vuejs.herokuapp.com/restaurant")
         console.warn("result: "+result.data)
