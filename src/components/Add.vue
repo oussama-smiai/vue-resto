@@ -10,6 +10,7 @@
 </template>
 <script>
 import Header from './Header.vue'
+import axios from 'axios'
 export default{
     name: 'Add',
     components:{
@@ -25,15 +26,21 @@ export default{
         }
     },
     methods:{
-        addRestaurant(){
-            console.warn(this.restaurant)
+        async addRestaurant(){
+            const result =await axios.post("https://db-vuejs.herokuapp.com/restaurant", {
+                name:this.restaurant.name, 
+                address: this.restaurant.address, 
+                contact:this.restaurant.contact})
+            if(result.status==201)
+                this.$router.push({name:'Home'})
+    
         }
     },
     mounted()
     {
         let user = localStorage.getItem('user-info')
         if (!user){
-            this.$router.push({name:'SignUp'})
+            this.$router.push({name:'Sign-up'})
         }
     }
 
