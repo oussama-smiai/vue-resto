@@ -32,7 +32,7 @@ export default{
                 address: this.restaurant.address, 
                 contact:this.restaurant.contact})
             if(result.status==201)
-                this.$router.push({name:'Home'})
+                this.$router.push({name:'/'})
     
         }
     },
